@@ -40,3 +40,5 @@ function solve(A, B, C, D, E) {
   const answer = isPossible ? "YES" : "NO";
   console.log(answer);
 }
+
+// В интернете люди запарываются и уменьшают количество сокращений.
