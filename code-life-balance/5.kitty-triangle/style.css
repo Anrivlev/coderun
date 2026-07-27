@@ -1,0 +1,28 @@
+:root {
+  --violet: #b6a4ff;
+  --green: #2ae881;
+}
+
+.triangle-left-bottom-div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* height: 512px;
+    width: 512px; */
+  background-color: #b6a4ff;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle-right-top-div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* width: 512px;
+    height: 512px; */
+  background-color: #2ae881;
+  clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+}
