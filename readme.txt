@@ -1,6 +1,7 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
-https://coderun.yandex.ru/selections/code-life-balance/problems/castle-if
+Последняя нерешенная задача:
+https://coderun.yandex.ru/selections/code-life-balance/problems/stylish-clothes
 
 
 Прочие ссылки
