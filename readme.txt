@@ -1,5 +1,6 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
+https://coderun.yandex.ru/selections/code-life-balance/problems/castle-if
 
 
 Прочие ссылки
