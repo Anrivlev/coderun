@@ -7,14 +7,38 @@ const rl = readline.createInterface({
 
 let mode = "n";
 let n;
-let cityCoordinates = [];
+let places = [];
 let k;
-let cityFrom;
-let cityTo;
+let from;
+let to;
 
-function calculateMinimumRoadCountFromTo() {
-    const queue = [];
+function calculateMinimumRoadCountFromTo(n, places, k, from, to) {
+  if (from === to) return 0;
+  const queue = [from];
+  let head = 0;
 
+  const distances = Array(n).fill(-1);
+  distances[from] = 0;
+
+  while (head < queue.length) {
+    const currentCity = queue[head];
+    head += 1;
+    for (let i = 0; i < n; i += 1) {
+      if (
+        distances[i] === -1 &&
+        distance(places[currentCity], places[i]) <= k
+      ) {
+        distances[i] = distances[currentCity] + 1;
+        queue.push(i);
+      }
+    }
+  }
+
+  return distances[to];
+}
+
+function distance(a, b) {
+  return Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]);
 }
 
 rl.on("line", (input) => {
@@ -26,8 +50,8 @@ rl.on("line", (input) => {
     }
     case "cityCoordinates": {
       const coordinate = input.split(" ").map((char) => Number(char));
-      cityCoordinates.push(coordinate);
-      if (cityCoordinates.length === n) mode = "k";
+      places.push(coordinate);
+      if (places.length === n) mode = "k";
       break;
     }
     case "k": {
@@ -36,9 +60,10 @@ rl.on("line", (input) => {
       break;
     }
     case "citiesFromAndTo": {
-      [cityFrom, cityTo] = input.split(" ").map((char) => Number(char));
+      [from, to] = input.split(" ").map((char) => Number(char) - 1);
       rl.close();
-
+      const cityCount = calculateMinimumRoadCountFromTo(n, places, k, from, to);
+      console.log(cityCount);
       break;
     }
   }
