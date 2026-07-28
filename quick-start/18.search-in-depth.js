@@ -30,7 +30,7 @@ rl.on("close", () => {
   const reachableFrom0 = new Set();
   reachableFrom0.add(0);
 
-  const queue = [0];
+  const queue = [0]; // лучше заменить на стэк, чтобы был поиск в глубину.
   let head = 0;
   while (head < queue.length) {
     const current = queue[head];
