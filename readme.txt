@@ -1,8 +1,10 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
 Последняя нерешенная задача:
-https://coderun.yandex.ru/selections/quickstart/problems/largest-product-three-numbers
-
+https://coderun.yandex.ru/selections/quickstart/problems/word-appearance-number
+Решать дальше:
+https://coderun.yandex.ru/catalog?groups=frontend&language=javascript&status=NOT_SOLVED&status=WRONG
+https://coderun.yandex.ru/selections/2024-summer-frontend
 
 Прочие ссылки
 https://leetcode.com/?from=interview&utm_medium=web&utm_source=company_header
