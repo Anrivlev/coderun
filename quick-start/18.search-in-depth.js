@@ -18,6 +18,7 @@ rl.on("line", (input) => {
 });
 
 rl.on("close", () => {
+  // вместо таблицы нужно было использовать списки смежности
   const reachabilityTable = new Array(N)
     .fill(null)
     .map(() => new Array(N).fill(-1));
