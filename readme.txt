@@ -1,7 +1,7 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
 Последняя нерешенная задача:
-https://coderun.yandex.ru/selections/code-life-balance/problems/stylish-clothes
+https://coderun.yandex.ru/selections/quickstart/problems/largest-product-three-numbers
 
 
 Прочие ссылки
