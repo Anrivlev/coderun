@@ -1,7 +1,8 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
 Последняя нерешенная задача:
-https://coderun.yandex.ru/selections/quickstart/problems/word-appearance-number
+https://coderun.yandex.ru/selections/2024-summer-frontend/problems/user-data-protection
+
 Решать дальше:
 https://coderun.yandex.ru/catalog?groups=frontend&language=javascript&status=NOT_SOLVED&status=WRONG
 https://coderun.yandex.ru/selections/2024-summer-frontend
