@@ -1,7 +1,7 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
 Последняя нерешенная задача:
-https://coderun.yandex.ru/problem/picture-with-a-variation
+https://coderun.yandex.ru/problem/are-we-related/description
 
 Решать дальше:
 https://coderun.yandex.ru/catalog?groups=frontend&language=javascript&status=NOT_SOLVED&status=WRONG
