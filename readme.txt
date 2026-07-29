@@ -1,7 +1,7 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
 Последняя нерешенная задача:
-https://coderun.yandex.ru/selections/2024-summer-frontend/problems/user-data-protection
+https://coderun.yandex.ru/problem/picture-with-a-variation
 
 Решать дальше:
 https://coderun.yandex.ru/catalog?groups=frontend&language=javascript&status=NOT_SOLVED&status=WRONG
