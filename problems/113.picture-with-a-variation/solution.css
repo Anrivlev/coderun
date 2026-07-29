@@ -1,0 +1,22 @@
+/* Я это не решал, только скопировал решение для будущего просмотра */
+
+div {
+  border-radius: 36px;
+  background: linear-gradient(
+        178deg,
+        rgba(0, 0, 0, 0.18) 0,
+        rgba(0, 0, 0, 0) 7px
+      )
+      0 96px / 96px 96px no-repeat,
+    linear-gradient(#f5f4f0, #f5f4f0) 0 96px / 96px 96px no-repeat,
+    linear-gradient(#000, #000) 96px 96px / 96px 96px no-repeat,
+    linear-gradient(145deg, #fcdd2e, #fcb600) 0 0 / 192px 96px no-repeat;
+}
+
+div:before {
+  /*Ваш код*/
+}
+
+div:after {
+  /*Ваш код*/
+}
