@@ -31,7 +31,7 @@ function getTopologicalSort(inputs, outputs) {
     while (queue.length > head) {
       const j = queue[head++];
       topologicalSort.push(j);
-      for (k of outputs[j]) {
+      for (const k of outputs[j]) {
         degrees[k] = degrees[k] -= 1;
         if (degrees[k] === 0) queue.push(k);
       }

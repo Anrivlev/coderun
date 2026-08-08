@@ -34,7 +34,7 @@ function isPossibleToColorInTwo(adjacencies) {
       const j = stack.pop();
       const color = colors[j];
       const nextColor = getOppositeColor(color);
-      for (node of adjacencies[j]) {
+      for (const node of adjacencies[j]) {
         if (colors[node] === color) {
           return false;
         }
