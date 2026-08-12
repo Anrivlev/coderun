@@ -1,11 +1,12 @@
 Coderun от Яндекса.
 https://coderun.yandex.ru/selections
-Последняя нерешенная задача:
-https://coderun.yandex.ru/problem/are-we-related/description
 
 Решать дальше:
 https://coderun.yandex.ru/catalog?groups=frontend&language=javascript&status=NOT_SOLVED&status=WRONG
 https://coderun.yandex.ru/selections/2024-summer-frontend
+
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+https://leetcode.com/explore/interview/card/top-interview-questions-medium/
 
 Прочие ссылки
 https://leetcode.com/?from=interview&utm_medium=web&utm_source=company_header
