@@ -1,4 +1,5 @@
 /**
+ * Мое решение
  * @param {number} x
  * @param {number} y
  * @return {number}
@@ -12,6 +13,12 @@ var hammingDistance = function (x, y) {
   return distance;
 };
 
+/**
+ * Решение намного более оптимальное
+ * @param {number} x
+ * @param {number} y
+ * @return {number}
+ */
 var hammingDistance = function (x, y) {
   let xor = x ^ y;
 
