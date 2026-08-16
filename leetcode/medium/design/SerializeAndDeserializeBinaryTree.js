@@ -53,7 +53,7 @@ var deserialize = function (data) {
       const node = prevLayer[i];
       if (node === null) continue;
       const leftVal = nodesArray[2 ** d + i * 2];
-      const rightVal = nodesArray[2 ** d + i * 2];
+      const rightVal = nodesArray[2 ** d + i * 2 + 1];
       const left =
         leftVal === null ? null : { val: leftVal, left: null, right: null };
       const right =
