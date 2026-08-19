@@ -1,4 +1,5 @@
 /**
+ * Лучше было бы с while и вложенным циклом для подсчета повторений
  * @param {character[]} chars
  * @return {number}
  */
