@@ -1,4 +1,5 @@
 /**
+ * После сытного обеда какая только дичь не придет в голову
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
