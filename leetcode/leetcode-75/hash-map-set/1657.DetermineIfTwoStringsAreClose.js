@@ -35,7 +35,7 @@ var closeStrings = function (word1, word2) {
     word2Occurencies.set(value, count + 1);
   });
 
-  if (word1Occurencies.length !== word2Occurencies.length) return false;
+  if (word1Occurencies.size !== word2Occurencies.size) return false;
 
   for (const [key, value] of word1Occurencies.entries()) {
     if (word2Occurencies.get(key) !== value) return false;
