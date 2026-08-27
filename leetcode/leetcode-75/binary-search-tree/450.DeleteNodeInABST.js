@@ -34,14 +34,31 @@ function findNodeWithParent(node, key, parent) {
 
 function balanceNode(node, parent) {
   if (node === null) return;
-  if (node.right) {
-    node.val = node.right.val;
-    balanceNode(node.right, node);
-  } else if (node.left) {
-    node.val = node.left.val;
-    balanceNode(node.left, node);
-  } else if (parent) {
-    if (parent.left === node) parent.left = null;
-    else parent.right = null;
+  if ((node.left && !node.right) || (!node.left && node.right)) {
+    if (parent.left === node) parent.left = node.left ?? node.right;
+    else parent.right = node.left ?? node.right;
+    return;
   }
+  if (node.left) {
+    const rightmostResult = findRightmost(node.left);
+    node.val = rightmostResult.node.val;
+    deleteNodeFromParent(rightmostResult.node, rightmostResult.parent);
+  } else if (parent) {
+    deleteNodeFromParent(node, parent);
+  }
+}
+
+function deleteNodeFromParent(node, parent) {
+  if (parent.left === node) parent.left = null;
+  else parent.right = null;
+}
+
+function findRightmost(node, parent) {
+  if (node.right === null) return { node, parent };
+  return findRightmost(node.right, node);
+}
+
+function findLeftmost(node) {
+  if (node.left === null) return node;
+  return findLeftmost(node.left);
 }
