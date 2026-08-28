@@ -25,7 +25,7 @@ var guessNumber = function (n) {
       right = mid - 1;
     }
   }
-  return -1;
+  return left;
 };
 
 var guess = function (num) {
