@@ -1,0 +1,23 @@
+{
+  "name": "coderun",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Anrivlev/coderun#readme",
+  "bugs": {
+    "url": "https://github.com/Anrivlev/coderun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anrivlev/coderun.git"
+  },
+  "license": "ISC",
+  "author": "Andrey Ivlev",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "datastructures-js": "^13.0.0"
+  }
+}
