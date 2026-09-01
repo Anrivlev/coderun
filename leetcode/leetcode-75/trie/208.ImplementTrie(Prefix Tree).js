@@ -1,5 +1,6 @@
 var Trie = function () {
-  this.root = { key: null, isWord: false, children: new Map() };
+  // Изначально написал через Map, через Object быстрее.
+  this.root = { key: null, isWord: false, children: {} };
 };
 
 /**
@@ -9,10 +10,10 @@ var Trie = function () {
 Trie.prototype.insert = function (word) {
   let currentNode = this.root;
   for (const token of word) {
-    let nextNode = currentNode.children.get(token);
+    let nextNode = currentNode.children[token];
     if (!nextNode) {
-      nextNode = { key: token, isWord: false, children: new Map() };
-      currentNode.children.set(token, nextNode);
+      nextNode = { key: token, isWord: false, children: {} };
+      currentNode.children[token] = nextNode;
     }
     currentNode = nextNode;
   }
@@ -26,7 +27,7 @@ Trie.prototype.insert = function (word) {
 Trie.prototype.search = function (word) {
   let currentNode = this.root;
   for (const token of word) {
-    const nextNode = currentNode.children.get(token);
+    const nextNode = currentNode.children[token];
     if (!nextNode) return false;
     currentNode = nextNode;
   }
@@ -40,7 +41,7 @@ Trie.prototype.search = function (word) {
 Trie.prototype.startsWith = function (prefix) {
   let currentNode = this.root;
   for (const token of prefix) {
-    const nextNode = currentNode.children.get(token);
+    const nextNode = currentNode.children[token];
     if (!nextNode) return false;
     currentNode = nextNode;
   }
