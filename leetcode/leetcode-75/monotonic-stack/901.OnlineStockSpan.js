@@ -7,13 +7,14 @@ var StockSpanner = function () {
  * @return {number}
  */
 StockSpanner.prototype.next = function (price) {
-  let count = 1;
-  for (let i = this.prices.length - 1; i >= 0; i--) {
-    if (price < this.prices[i]) break;
-    count++;
+  let span = 1;
+  while (this.prices.length > 0 && this.prices.at(-1).price <= price) {
+    const prev = this.prices.pop();
+    span += prev.span;
   }
-  this.prices.push(price);
-  return count;
+
+  this.prices.push({ price, span });
+  return span;
 };
 
 /**
